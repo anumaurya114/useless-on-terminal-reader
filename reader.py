@@ -43,6 +43,7 @@ def traverse(para,db_dir,audio_collection):
 			sys.stdout.write("\x1b[1A\x1b[2K")
 		print(to_print)
 		audio_collection.speak(i.group().lower())
+		time.sleep(delay_time)
 
 def split_on(string,breakers):
 	chunk = ''
@@ -119,4 +120,5 @@ def reader(text_file,db_dir):
 #db_dir = 'db/english_audio/'
 text_file = sys.argv[1]
 db_dir = sys.argv[2]
+delay_time = float(sys.argv[3])
 reader(text_file,db_dir)
