@@ -1,5 +1,6 @@
 Example 'db' directory is already present with few words (to see the structure of the 'db' directory.)
 
+<<<<<<< HEAD
 1. download audio files from the link
 	http://download.shtooka.net/eng-wcp-us_flac.tar
 2. unzip 'eng-wcp-us_flac.tar' in 'db' directory
@@ -8,6 +9,12 @@ Example 'db' directory is already present with few words (to see the structure o
 	python3 convert.py "db/flac/" "db/english_audio/"
 4. Run reader.py (.6 is delay time for next word)
 	python3 reader.py "story.txt" "db/english_audio/" .6
+=======
+1. download audio files from the link : `http://download.shtooka.net/eng-wcp-us_flac.tar`
+2. unzip 'eng-wcp-us_flac.tar' in 'db' directory :  `tar -C db/ -xvf eng-wcp-us_flac.tar`
+3. convert .flac files to .wav files : `python3 convert.py "db/flac/" "db/english_audio/"`
+4. Run reader.py : `python3 reader.py "story.txt" "db/english_audio/"`
+>>>>>>> 04fe2a137ad1948e0acf54c97f0bdf480bceaaca
 
 	View
 
