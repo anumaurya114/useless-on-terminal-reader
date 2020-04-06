@@ -3,11 +3,11 @@ Example 'db' directory is already present with few words (to see the structure o
 1. download audio files from the link
 	http://download.shtooka.net/eng-wcp-us_flac.tar
 2. unzip 'eng-wcp-us_flac.tar' in 'db' directory
-	tar -C db/ -xvf eng-wcp-us_flac.tar
+	`tar -C db/ -xvf eng-wcp-us_flac.tar`
 3. convert .flac files to .wav files : run convert.py file
-	python3 convert.py "db/flac/" "db/english_audio/"
+	`python3 convert.py "db/flac/" "db/english_audio/"`
 4. Run reader.py (.6 is delay time for next word)
-	python3 reader.py "story.txt" "db/english_audio/" .6
+	`python3 reader.py "story.txt" "db/english_audio/" .6`
 
 1. download audio files from the link : `http://download.shtooka.net/eng-wcp-us_flac.tar`
 2. unzip 'eng-wcp-us_flac.tar' in 'db' directory :  `tar -C db/ -xvf eng-wcp-us_flac.tar`
